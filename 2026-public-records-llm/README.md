@@ -1,7 +1,9 @@
 # Enhancing public records work with LLMs
 
-Sanjin Ibrahimovic <sanjin@muckrock.com>
-Allan Lasser <allan@muckrock.com>
+**2:30 – 3:30pm, Thursday, March 5, 2026**
+
+- Sanjin Ibrahimovic <sanjin@muckrock.com>
+- Allan Lasser <allan@muckrock.com>
 
 ## Introduction
 
