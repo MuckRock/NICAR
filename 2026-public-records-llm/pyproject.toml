@@ -1,0 +1,13 @@
+[project]
+name = "nicar-2026-public-records-llm"
+version = "0.1.0"
+description = "Enhancing public records work with LLMs — NICAR 2026"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic",
+    "python-documentcloud",
+    "pandas",
+    "ipykernel",
+    "python-dotenv",
+    "matplotlib"
+]

@@ -1,0 +1,30 @@
+ {
+  "name": "MuckRock NICAR",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/uv:1": {}
+  },
+  "postCreateCommand": "uv sync",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "charliermarsh.ruff"
+      ],
+      "settings": {
+        "jupyter.notebookFileRoot": "${workspaceFolder}"
+      }
+    }
+  },
+  "secrets": {
+    "ANTHROPIC_API_KEY": {
+      "description": "API key for Anthropic Claude"
+    },
+    "DOCUMENTCLOUD_USERNAME": {
+      "description": "DocumentCloud username"
+    },
+    "DOCUMENTCLOUD_PASSWORD": {
+      "description": "DocumentCloud password"
+    }
+  }
+}
