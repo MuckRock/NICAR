@@ -780,6 +780,7 @@ dependencies = [
     { name = "pandas" },
     { name = "python-documentcloud" },
     { name = "python-dotenv" },
+    { name = "python-muckrock" },
 ]
 
 [package.metadata]
@@ -790,6 +791,7 @@ requires-dist = [
     { name = "pandas" },
     { name = "python-documentcloud" },
     { name = "python-dotenv" },
+    { name = "python-muckrock" },
 ]
 
 [[package]]
@@ -1223,6 +1225,21 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/f0/26/19cadc79a718c5edbec86fd4919a6b6d3f681039a2f6d66d14be94e75fb9/python_dotenv-1.2.1.tar.gz", hash = "sha256:42667e897e16ab0d66954af0e60a9caa94f0fd4ecf3aaf6d2d260eec1aa36ad6", size = 44221, upload-time = "2025-10-26T15:12:10.434Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/14/1b/a298b06749107c305e1fe0f814c6c74aea7b2f1e10989cb30f544a1b3253/python_dotenv-1.2.1-py3-none-any.whl", hash = "sha256:b81ee9561e9ca4004139c6cbba3a238c32b03e4894671e181b671e8cb8425d61", size = 21230, upload-time = "2025-10-26T15:12:09.109Z" },
+]
+
+[[package]]
+name = "python-muckrock"
+version = "2.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "python-squarelet" },
+    { name = "ratelimit" },
+    { name = "requests" },
+    { name = "urllib3" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/aa/69/3078d6b9b0cd411f20c241a78447cb6a3e7bb236aa255d241bf8c7aef6b2/python_muckrock-2.2.0.tar.gz", hash = "sha256:249c19656c1c31f058caf80a5d3fe7e7a7f8b69bcf4a7f67dcc128301bec0163", size = 43742, upload-time = "2025-05-21T16:10:13.544Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b9/ce/5aa8c467b33c0a6d4b1fb697f3713660643bcc76160d73eaa94cfe4a2f49/python_muckrock-2.2.0-py3-none-any.whl", hash = "sha256:41e42fb1c94e03009c2b9b7e7e60176b34f547ebdbebf82185e77f9a41b0358d", size = 33091, upload-time = "2025-05-21T16:10:12.188Z" },
 ]
 
 [[package]]

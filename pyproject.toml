@@ -6,6 +6,7 @@ requires-python = ">=3.12"
 dependencies = [
     "anthropic",
     "python-documentcloud",
+    "python-muckrock",
     "pandas",
     "ipykernel",
     "python-dotenv",
