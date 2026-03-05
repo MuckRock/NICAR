@@ -10,5 +10,6 @@ dependencies = [
     "pandas",
     "ipykernel",
     "python-dotenv",
-    "matplotlib"
+    "matplotlib",
+    "plotly"
 ]
