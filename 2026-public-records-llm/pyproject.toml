@@ -1,0 +1,44 @@
+[project]
+name = "nicar-2026-public-records-llm"
+version = "0.1.0"
+description = "Enhancing public records work with LLMs — NICAR 2026"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic",
+    "python-documentcloud",
+    "python-muckrock",
+    "pandas",
+    "ipykernel",
+    "python-dotenv",
+    "matplotlib",
+    "plotly",
+    "nbformat>=5.10.4",
+]
+
+[tool.pylint.main]
+# Treat IPython built-ins as known names so pylint stops flagging them.
+additional-builtins = ["display", "get_ipython", "_", "__", "___"]
+
+[tool.pylint."messages control"]
+disable = [
+    # Notebooks display values via trailing expressions; not "pointless".
+    "pointless-statement",
+    "expression-not-assigned",
+    # Cells share a namespace, so imports/definitions don't live at "top".
+    "wrong-import-position",
+    "wrong-import-order",
+    "ungrouped-imports",
+    "reimported",
+    # Variables defined in earlier cells look "undefined" / "redefined" to pylint.
+    "redefined-outer-name",
+    "undefined-variable",
+    "invalid-name",
+    # Exploratory code doesn't need docstrings.
+    "missing-module-docstring",
+    "missing-function-docstring",
+    "missing-class-docstring",
+    # Long single-cell analyses trip these constantly.
+    "too-many-locals",
+    "too-many-statements",
+    "line-too-long",
+]

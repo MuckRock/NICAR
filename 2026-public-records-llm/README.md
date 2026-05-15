@@ -9,40 +9,31 @@
 
 So, you've just received a bunch of public records—how can you make sense of them?
 
-## Create a project folder
+In this session, we'll show off three different ways to analyze public records using a combination of the MuckRock Requests API, the DocumentCloud API, and the Anthropic API. We'll show how to:
 
-```sh
-mkdir ~/my-investigation
-cd ~/my-investigation
+1. How to extract text from documents, analayze their contents, and visualize them
+2. How to access MuckRock's agency API and submit a FOIA request with a Python script
+3. How to use Claude for advanced text and PDF analysis
+4. How to _think_ about applying LLMs like Claude within your reporting practice
+
+We cover three scenarios:
+
+1. Analyzing and visualizing Trump's pardons
+2. Requesting police disciplinary records
+3. Obtaining FOIA logs from IG reports
+
+## Requirements
+
+In order to run the Jupityr notebook, `notebook.ipynb` for yourself, you'll need to create a `.env` file in the `2026-public-records-llm` directory with:
+
+```
+ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY
+DOCUMENTCLOUD_USERNAME=YOUR_MUCKROCK_USERNAME
+DOCUMENTCLOUD_PASSWORD=YOUR_MUCKROCK_PASSWORD
+MUCKROCK_USERNAME=YOUR_MUCKROCK_USERNAME
+MUCKROCK_PASSWORD=YOUR_MUCKROCK_PASSWORD
 ```
 
-## Using the LLM CLI tool
-
-1. [Install the `llm` library](https://llm.datasette.io/en/stable/setup.html).
-
-```sh
-pip install llm
-```
-```sh
-uv tool install llm
-```
-```sh
-brew install llm
-```
-
-2. Then we need to install some plugins for LLM to use it with DocumentCloud and Claude. We also need to make sure our secret keys are available in the environment.
-
-```sh
-# install llm plugins
-llm install llm-anthropic
-llm install llm-documentcloud
-```
-
-```sh
-# make secrets available
-export ANTHROPIC_API_KEY=<YOUR KEY HERE>
-```
-
-## Using the DocumentCloud SDK
-
-TK
+- `ANTHROPIC_API_KEY` can be obtained from `platform.claude.com`. There is a free tier that allows you to make limited use of Claude.
+- `DOCUMENTCLOUD_USERNAME` and `MUCKROCK_USERNAME` are the same value—your MuckRock account username—but each Python library expects a slightly differently named secret.
+- `DOCUMENTCLOUD_PASSWORD` and `MUCKROCK_PASSWORD` are the same value—your MuckRock account password—but each Python library expects a slightly differently named secret.

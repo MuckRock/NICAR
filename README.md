@@ -1,6 +1,6 @@
 # MuckRock NICAR Resources
 
-Hey there, data journalist!
+Hey there, data journalist! Here are tipsheets and notebooks from MuckRock's NICAR sessions.
 
 ## NICAR 2026
 
