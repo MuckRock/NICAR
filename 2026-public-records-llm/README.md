@@ -24,7 +24,7 @@ We cover three scenarios:
 
 ## Requirements
 
-In order to run the Jupityr notebook, `notebook.ipynb` for yourself, you'll need to create a `.env` file in the `2026-public-records-llm` directory with:
+In order to run the Jupityr notebook, [`notebook.ipynb`](./notebook.ipynb) for yourself, you'll need to create a `.env` file in this directory with:
 
 ```
 ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY
