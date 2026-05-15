@@ -11,8 +11,6 @@ dependencies = [
     "ipykernel",
     "python-dotenv",
     "matplotlib",
-    "plotly",
-    "nbformat>=5.10.4",
 ]
 
 [tool.pylint.main]
